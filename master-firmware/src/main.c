@@ -33,6 +33,7 @@
 #include "base/base_controller.h"
 #include "trace/trace_points.h"
 #include "strategy.h"
+#include "dynamic_obstacle_avoidance.h"
 
 void init_base_motors(void);
 
@@ -238,6 +239,7 @@ int main(void) {
 
     /* Initialize strategy thread, will wait for signal to begin game */
     strategy_start();
+    dynamic_obstacle_avoidance_start();
 
     stream_init();
 
