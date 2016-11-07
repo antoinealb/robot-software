@@ -6,7 +6,6 @@ build:
     - pip3 install cvra-packager
     - cd master-firmware
     - packager
-    - mkdir build && pushd build
+    - mkdir build && cd build
     - cmake ..
     - make check
-    - popd
