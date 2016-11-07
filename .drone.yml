@@ -1,5 +1,9 @@
 build:
   image: antoinealb/cpputest-cvra
+  cache:
+    mount:
+      - lib
+
   commands:
     - git submodule update --init
     - cd master-firmware
