@@ -1,9 +1,7 @@
 build:
-  image: antoinealb/cpputest
+  image: antoinealb/cpputest-cvra
   commands:
     - git submodule update --init
-    - apt-get update && apt-get install -y cmake python3-pip
-    - pip3 install cvra-packager
     - cd master-firmware
     - packager
     - mkdir build && cd build
