@@ -35,6 +35,7 @@ TEST(BusEnumeratorTestGroup, Init)
     CHECK_EQUAL(buffer_len, en.buffer_len);
     CHECK_EQUAL(0, en.nb_entries_str_to_can);
     CHECK_EQUAL(0, en.nb_entries_can_to_str);
+    FAIL("foo");
 }
 
 
